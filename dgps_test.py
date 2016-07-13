@@ -252,7 +252,7 @@ def handle_device2(msg):
             return
         print("-----------------")
         display_diff("RECV1<->RECV2", satinfo.receiver_position, pos)
-        display_diff("RECV2<->AVG",   satinfo.receiver_position, satinfo.average_position)
+        display_diff("RECV2<->AVG",   satinfo.recv2_position, satinfo.average_position)
         display_diff("AVG<->RECV1",   satinfo.average_position, satinfo.receiver_position)
         display_diff("AVG<->RECV2",   satinfo.average_position, pos)
         if satinfo.reference_position is not None:
